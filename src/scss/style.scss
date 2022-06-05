@@ -40,8 +40,12 @@ main {
     border: 1px solid #ffd6b3;
     border-radius: 4px;
     overflow: hidden;
+    &.open>.accordion__description{
+      height: 100%;
+    }
     &.open{
       padding-bottom: 15px;
+      
     }
     &:not(:last-of-type) {
       margin-bottom: 15px;
@@ -68,5 +72,6 @@ main {
     padding: 0 15px;
     height: 0;
     transition: all 0.3s linear;
+   
   }
 }
